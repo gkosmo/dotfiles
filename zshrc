@@ -20,22 +20,11 @@ export PATH="./bin:${PATH}"
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
+
+ export PATH=~/.npm-global/bin:$PATH
+ 
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
+
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"

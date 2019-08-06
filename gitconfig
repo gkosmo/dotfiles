@@ -49,3 +49,5 @@
 [user]
 	email = gkosmo1@hotmail.com
 	name = g k
+[credential]
+	helper = cache
