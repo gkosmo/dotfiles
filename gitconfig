@@ -48,6 +48,6 @@
   mergeoptions = --no-edit
 [user]
 	email = gkosmo1@hotmail.com
-	name = g k
+	name = g
 [credential]
 	helper = cache
