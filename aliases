@@ -5,3 +5,19 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+alias tuple='flatpak run app.tuple.app'
+
+# Start zookeeper and kafka 
+alias zookeeper='/home/gkosmo/softwares/apache-zookeeper-3.8.0-bin/bin/zkServer.sh start'
+alias kafka='sudo service kafka start'
+
+
+# GIT aliases
+
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gap='git add -p'
+alias gm='git commit -m'
+alias gma='git commit --amend'
+alias gpf='git push --force-with-lease'
