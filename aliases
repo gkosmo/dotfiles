@@ -21,3 +21,7 @@ alias gap='git add -p'
 alias gm='git commit -m'
 alias gma='git commit --amend'
 alias gpf='git push --force-with-lease'
+
+alias aoc='cd /home/gkosmo/code/gkosmo/advent-of-code/2023/aoc-starting-kit'
+
+alias be='bundle exec'
