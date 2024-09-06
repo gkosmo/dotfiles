@@ -38,6 +38,17 @@
   # Removes a file from the index
   unstage = reset HEAD --
 
+  # Removes a file from the index and the working directory
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|staging\\|production' | xargs -n 1 git branch -d"
+
+  # Same as  sweep but also removes remote branches
+  rcleanup = "!git branch -r --merged | grep -v '\\*\\|master\\|staging\\|production' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
+  
+  # Remove branches that are gone
+  removegone= "!git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }' | xargs -r git branch -D"
+
+
+
 [help]
   autocorrect = 1
 

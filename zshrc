@@ -2,13 +2,13 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="simple"
 
 # Add ruby version on prompt (float right)
 RPS1='[$(ruby_prompt_info)]$EPS1'
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(gitfast brew last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search asdf)
+plugins=(gitfast brew last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search asdf fzf)
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
@@ -40,10 +40,25 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 
 export PATH="$PATH:$HOME/bin"
+
+export FLYCTL_INSTALL="/home/gkosmo/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+
+export PATH="/home/gkosmo/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="/home/gkosmo/.local/bin:$PATH"
+# bun completions
+[ -s "/home/gkosmo/.bun/_bun" ] && source "/home/gkosmo/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+export PATH=$PATH:$JAVA_HOME/bin
+
+export REACT_EDITOR=code
+
+export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
