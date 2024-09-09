@@ -61,4 +61,4 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 export REACT_EDITOR=code
 
-export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden -g ""'export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
